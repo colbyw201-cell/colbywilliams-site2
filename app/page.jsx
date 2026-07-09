@@ -45,6 +45,27 @@ const GRAIN =
 const STYLES = `
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
+/* ---- Layout utilities (baked in so they can never go missing) ---- */
+.mx-auto{margin-left:auto;margin-right:auto;}
+.flex{display:flex;}
+.grid{display:grid;}
+.flex-col{flex-direction:column;}
+.flex-wrap{flex-wrap:wrap;}
+.items-center{align-items:center;}
+.items-start{align-items:flex-start;}
+.items-end{align-items:flex-end;}
+.justify-center{justify-content:center;}
+.justify-between{justify-content:space-between;}
+.w-full{width:100%;}
+.hidden{display:none;}
+.px-6{padding-left:1.5rem;padding-right:1.5rem;}
+.pb-4{padding-bottom:1rem;}
+.mt-2{margin-top:0.5rem;}
+.gap-0{gap:0;}.gap-1{gap:.25rem;}.gap-2{gap:.5rem;}.gap-3{gap:.75rem;}.gap-4{gap:1rem;}
+.gap-5{gap:1.25rem;}.gap-6{gap:1.5rem;}.gap-8{gap:2rem;}.gap-10{gap:2.5rem;}
+.gap-11{gap:2.75rem;}.gap-14{gap:3.5rem;}.gap-16{gap:4rem;}
+@media (min-width:768px){[class~="md:flex"]{display:flex;}[class~="md:hidden"]{display:none;}}
+
 :root{
   --paper:#FCFBF9; --stone:#F4F1EB; --stone-2:#EBE6DD; --mist:#EFE9E2;
   --ink:#16130F; --ink-soft:#57534C;
