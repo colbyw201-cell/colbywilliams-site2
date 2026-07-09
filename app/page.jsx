@@ -348,9 +348,9 @@ export default function ColbyWilliamsHome() {
       <div className="grain" />
 
       {/* NAV */}
-      <header style={{ position: "sticky", top: 0, zIndex: 50, transition: "background .3s, box-shadow .3s, border-color .3s", background: scrolled ? "rgba(252,251,249,0.88)" : "transparent", backdropFilter: scrolled ? "blur(12px)" : "none", borderBottom: scrolled ? "1px solid var(--line)" : "1px solid transparent" }}>
-        <div className="mx-auto flex items-center justify-between px-6" style={{ maxWidth: 1240, height: 92 }}>
-          <a href="#top" className="flex items-center"><img src={WORDMARK} alt="Innovative Realty Solutions" style={{ height: 64, width: "auto", maxWidth: "64vw", display: "block" }} /></a>
+      <header <header className="px-6" style={{ position: "sticky", top: 0, zIndex: 50, transition: "background .3s, box-shadow .3s, border-color .3s", background: scrolled ? "rgba(252,251,249,0.88)" : "transparent", backdropFilter: scrolled ? "blur(12px)" : "none", borderBottom: scrolled ? "1px solid var(--line)" : "1px solid transparent" }}>
+        <div className="mx-auto flex items-center justify-between paddingLeft: 0" style={{ maxWidth: 1240, height: 92 }}>
+          <a href="#top" className="flex items-center"><img src={WORDMARK} alt="Innovative Realty Solutions" style={{ height: 64, width: "auto", maxWidth: "64vw", display: "block", marginLeft: -3 }} /></a>
           <nav className="hidden md:flex items-center gap-11">
             {NAV.map((n) => <a key={n.label} href={n.href} className="mono link-u" style={{ fontSize: 13.5, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-soft)" }}>{n.label}</a>)}
             <a href="#contact" className="btn btn-primary" style={{ padding: "12px 22px", fontSize: 13.5 }}>Let's talk <ArrowUpRight size={16} /></a>
